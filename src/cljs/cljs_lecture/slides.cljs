@@ -21,13 +21,13 @@
    - Compiles to JavaScript
    - Includes most of Clojure
      - Persistent collections, sequence fns, etc
-   - Some differences, i.e cljs number is just JS number
+   - Some differences, i.e cljs number is just js number
    "
 
    "
    # ClojureScript
    - Google closure compiler
-   - Seamless interop with JS (though dependencies are a bit tricky at times)
+   - Seamless interop with js (though dependencies are a bit tricky at times)
    ```clojure
    (.log js/console \"hello\")
    ```
@@ -99,9 +99,9 @@
    "
    # Side note: Performance
    - Intuitively, should be slower than js
-     - Another layer on top of JS, functional
+     - Another layer on top of js, functional
      - However:
-       - Very thin layer on top of JS (e.g cljs functions are just js functions)
+       - Very thin layer on top of js (e.g cljs functions are just js functions)
        - In practice often faster for React apps!
    "
 
@@ -151,6 +151,12 @@
    "
    # re-frame flow
    ![dominoes](images/re-frame-dominoes.png)
+   "
+
+   "
+   # re-frame-10x
+   - Tools similar to Redux devtools
+   - See current app-db, events etc
    "
 
    "

@@ -18,7 +18,7 @@
                  (for [[letter n] common-letters]
                    [:span [:b letter "(" n ")"]]))]]))
 
-(def example-components {16 form-example})
+(def example-components {17 form-example})
 
 (defn main-panel []
   (let [slide-index @(rf/subscribe [::subs/slide-index])]
