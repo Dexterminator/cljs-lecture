@@ -1,0 +1,26 @@
+/target
+/classes
+/checkouts
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+/.lein-*
+/.nrepl-port
+.hgignore
+.hg/
+.idea/
+*.iml
+/resources/public/js/compiled
+/resources/public/css
+out
+figwheel_server.log
+.rebel_readline_history
+logs
+profiles.clj
+
+# NPM
+node_modules
+package.json
+npm-debug.log
+package-lock.json
