@@ -19,7 +19,7 @@
    "
    # ClojureScript
    - Compiles to JavaScript
-   - Most of Clojure
+   - Includes most of Clojure
      - Persistent collections, sequence fns, etc
    - Some differences, i.e cljs number is just JS number
    "
@@ -34,9 +34,16 @@
    "
 
    "
+   # Code sharing
+   - Code without interop is often identical in clj and cljs
+   - .cljc
+   - Example: validation logic
+   "
+
+   "
    # Hiccup
    - Express html using Clojure data structures
-   - All seq fns available to manipulate/generate hiccup!
+   - All seq fns available to manipulate/generate hiccup
    ```clojure
    [:div.example-class
      [:h1 \"Hello world\"]
@@ -48,10 +55,10 @@
 
    "
    # Figwheel
-   - Reloadable code
    - Change hiccup/css/other logic
      - Automatically reloads
      - Without having to recreate state
+   - Encourages writing \"reloadable\" code
    - Heads up display of compile errors
    "
 
@@ -64,7 +71,7 @@
    # Reagent ![reagent-logo](images/reagent-logo.png)
    - React wrapper for cljs
    - Uses hiccup
-   - Components are just Clojure functions!
+   - Components are just Clojure functions
    - Like React, rerender component when input changes
    ```clojure
    (defn hello-component [name]
@@ -91,7 +98,7 @@
 
    "
    # Side note: Performance
-   - Intuitively, should be slower
+   - Intuitively, should be slower than js
      - Another layer on top of JS, functional
      - However:
        - Very thin layer on top of JS (e.g cljs functions are just js functions)
