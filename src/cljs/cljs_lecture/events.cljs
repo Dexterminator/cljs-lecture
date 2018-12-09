@@ -19,3 +19,8 @@
   ::previous-slide
   (fn-traced [{:keys [db]} _]
     {:db (update db :slide-index #(max 0 (dec %)))}))
+
+(rf/reg-event-fx
+  ::text-changed
+  (fn [{:keys [db]} [_ text]]
+    {:db (assoc db :text text)}))
