@@ -10,7 +10,7 @@
   (let [text @(rf/subscribe [::subs/text])
         common-letters @(rf/subscribe [::subs/top-common-letters])]
     [:div
-     [:input {:on-change #(rf/dispatch-sync [::events/text-changed (-> % .-target .-value)])
+     [:input {:on-change #(rf/dispatch [::events/text-changed (-> % .-target .-value)])
               :value text}]
      [:div "You entered: " [:b text]]
      [:div "Most common letters: "
