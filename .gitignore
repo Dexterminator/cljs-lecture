@@ -12,7 +12,6 @@ pom.xml.asc
 .idea/
 *.iml
 /resources/public/js/compiled
-/resources/public/css
 out
 figwheel_server.log
 .rebel_readline_history

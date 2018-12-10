@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600');
+
+body {
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 3em;
+}
+
+.app {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.example-component {
+    padding: 0.2em;
+    background: lightblue;
+    border-radius: 10px;
+}
+
+input {
+    border: 2px solid lightgrey;
+    font-size: 1em;
+}
