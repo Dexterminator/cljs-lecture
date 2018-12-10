@@ -36,7 +36,7 @@
    "
    # Code sharing
    - Code without interop is often identical in clj and cljs
-   - .cljc
+   - `.cljc`
    - Example: validation logic
    "
 
