@@ -10,16 +10,32 @@
    "
    # Agenda
    - Who are we?
-   - Why this is the best course ever
+   - Course takeaways
    - ClojureScript
    - Reagent
    - re-frame
    "
 
    "
+   # Who are we?
+   - MSc in Computer Science graduates at KTH
+   - Software Engineers at TriOptima
+   "
+
+   "
+   # Course takeaways
+   - Fun and modern
+   - Used to be Java or Clojure
+   - This is how it's done (almost)
+     - The future is unknown
+     - Demands change
+     - Focus on writing good code
+   "
+
+   "
    # ClojureScript
    - Compiles to JavaScript
-   - Includes most of Clojure
+   - Includes most of Clojure (`clojure.core` etc.)
      - Persistent collections, sequence fns, etc
    - Some differences, i.e cljs number is just js number
    "
@@ -97,7 +113,7 @@
    "
 
    "
-   # Side note: Performance
+   # Performance
    - Intuitively, should be slower than js
      - Another layer on top of js, functional
      - However:
@@ -165,6 +181,8 @@
 
    "
    # Thank you!
-
+   - [https://clojurescript.org/](https://clojurescript.org/)
+   - [https://reagent-project.github.io/](https://reagent-project.github.io/)
+   - [https://github.com/Day8/re-frame](https://github.com/Day8/re-frame)
    "
    ])
