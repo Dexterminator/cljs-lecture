@@ -26,9 +26,9 @@
     {:db (assoc db :text text)}))
 
 (comment
-  ;(day8.re-frame-10x/traced-result 19875 0)
   (map inc [1 2 3 4 5])
   (js/alert "Hello!")
+  (.log js/console {:foo {:bar {:baz "quux"}}})
   (rf/dispatch [::previous-slide])
   (rf/dispatch [::next-slide])
   (rf/dispatch [::text-changed "I come from the REPL!"]))

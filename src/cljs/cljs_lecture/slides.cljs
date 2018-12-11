@@ -98,7 +98,7 @@
    "
 
    "
-   # Reagent
+   # Reagent ![reagent-logo](images/reagent-logo.png)
    - Can use \"ratoms\" to rerender
    ```clojure
    (def click-count (reagent/atom 0))
@@ -122,7 +122,7 @@
    "
 
    "
-   # re-frame
+   # re-frame ![re-frame-logo](images/re-frame-logo.png)
    - Framework built on top of Reagent
    - Similar to Redux in js
    - Centralized state, \"app-db\"
@@ -155,6 +155,7 @@
    - Query the app db
    - View can `subscribe`
    - re-render as subscription value changes
+   - Can subscribe to other subscriptions
    ```clojure
    (reg-sub
      :my-subscription
