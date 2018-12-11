@@ -159,10 +159,10 @@
    - Can subscribe to other subscriptions
    ```clojure
    (reg-sub
-     :my-subscription
-     (fn [db] (:some-key db))
+     :firestone-deck
+     (fn [db] (:deck db))
 
-   (subscribe [:my-subscription])
+   (subscribe [:firestone-deck])
    ```
    "
 
@@ -185,6 +185,7 @@
    # Thank you!
    - [https://clojurescript.org/](https://clojurescript.org/)
    - [https://reagent-project.github.io/](https://reagent-project.github.io/)
+   - [https://github.com/tonsky/rum](https://github.com/tonsky/rum)
    - [https://github.com/Day8/re-frame](https://github.com/Day8/re-frame)
    "
    ])
