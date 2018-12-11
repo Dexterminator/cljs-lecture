@@ -35,7 +35,8 @@
    "
    # ClojureScript
    - Compiles to JavaScript
-   - Includes most of Clojure (`clojure.core` etc.)
+   - Includes most of Clojure
+     - `clojure.core`
      - Persistent collections, sequence fns, etc
    - Some differences, i.e cljs number is just js number
    "
@@ -101,14 +102,14 @@
    # Reagent ![reagent-logo](images/reagent-logo.png)
    - Can use \"ratoms\" to rerender
    ```clojure
-   (def click-count (reagent/atom 0))
+   (def turn (reagent/atom 0))
 
-   (defn counting-component []
+   (defn end-turn-component []
      [:div
-       \"Clicks: \" @click-count
+       \"Turn: \" @click-count
        [:input {:type \"button\"
-                :value \"Click me!\"
-                :on-click #(swap! click-count inc)}]])
+                :value \"End turn\"
+                :on-click #(swap! turn inc)}]])
    ```
    "
 
