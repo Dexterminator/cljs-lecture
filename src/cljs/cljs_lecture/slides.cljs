@@ -106,10 +106,9 @@
 
    (defn end-turn-component []
      [:div
-       \"Turn: \" @click-count
-       [:input {:type \"button\"
-                :value \"End turn\"
-                :on-click #(swap! turn inc)}]])
+       \"Turn: \" @turn
+       [:button {:on-click #(swap! turn inc)}
+         \"End turn\"]])
    ```
    "
 
